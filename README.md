@@ -80,7 +80,8 @@ change_tf
 ## different TF appears, so you can choose one of them.
 
 ## Further options with input .lhco file can be given as input
-#set 
+Set
+
 nb_exp_events 2
 #set
 nb_event_by_node 2
