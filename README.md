@@ -74,17 +74,23 @@ cd template_twz_madweight
 ## Sometimes it makes problem as in my case, but I solved it. You can see the problem and solution in this bug.
 ## https://bugs.launchpad.net/mg5amcnlo/+bug/1844041
 
-## you can make changes in cards
-## which transfer function to be used, just type:
+# you can make changes in cards
+# which transfer function to be used, just type:
 change_tf
 ## different TF appears, so you can choose one of them.
 
 ## Further options with input .lhco file can be given as input
-set nb_exp_events 2
-set nb_event_by_node 2
-set MW_int_points 1000
-set MW_parameter 13 165 170 175 180 185
-set precision 0.01
-set inputfile ../template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco
+#set 
+nb_exp_events 2
+#set
+nb_event_by_node 2
+#set 
+MW_int_points 1000
+#set 
+MW_parameter 13 165 170 175 180 185
+#set 
+precision 0.01
+#set 
+inputfile ../template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco
 >
 
