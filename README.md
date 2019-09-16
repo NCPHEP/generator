@@ -81,17 +81,16 @@ change_tf
 
 ## Further options with input .lhco file can be given as input
 Set
-
 nb_exp_events 2
-#set
+Set
 nb_event_by_node 2
-#set 
+Set
 MW_int_points 1000
-#set 
+Set
 MW_parameter 13 165 170 175 180 185
-#set 
+Set
 precision 0.01
-#set 
+Set
 inputfile ../template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco
 >
 
