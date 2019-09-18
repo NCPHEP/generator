@@ -45,6 +45,7 @@ for backup
 `tar xf MG5_aMC_v2.6.0.tar.gz`
 
 `rm MG5_aMC_v2.6.0.tar.gz`
+
 ###################################################################
 
 #set the pdf path
@@ -75,7 +76,7 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define top = t t~`
 
-`generate p p > top w z`
+`generate p p > top w z, (top > w b, w > e+ ve), w > mu+ vm, z > e+ e-`
 
 `output template_twz_madevents`
 
@@ -109,9 +110,9 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define top = t t~`
 
-`generate p p > top w z`
+`generate p p > top w z, (top > w b, w > e+ ve), w > mu+ vm, z > e+ e-`
 
-`output madweight template_twz_madweight
+`output madweight template_twz_madweight`
 
 `exit`
 
