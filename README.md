@@ -13,13 +13,16 @@ for backup
 `cd madgraph`
 
 # install the latest PDF
-curl -O -L https://www.hepforge.org/archive/lhapdf/LHAPDF-6.1.6.tar.gz
-tar xf LHAPDF-6.1.6.tar.gz
-rm LHAPDF-6.1.6.tar.gz
-cd LHAPDF-6.1.6
-./configure --prefix=$PWD/..
-# if you have boost problem, then use
-#./configure --with-boost=/cvmfs/cms.cern.ch/slc7_amd64_gcc530/external/boost/1.63.0/include --prefix=$PWD/..
+
+`curl -O -L https://www.hepforge.org/archive/lhapdf/LHAPDF-6.1.6.tar.gz`
+`tar xf LHAPDF-6.1.6.tar.gz`
+`rm LHAPDF-6.1.6.tar.gz`
+`cd LHAPDF-6.1.6`
+`./configure --prefix=$PWD/..`
+
+#if you have boost problem, then use
+
+`./configure --with-boost=/cvmfs/cms.cern.ch/slc7_amd64_gcc530/external/boost/1.63.0/include --prefix=$PWD/..`
 
 make -j8
 make install
