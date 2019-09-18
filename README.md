@@ -1,9 +1,11 @@
 # generator
 #MadGraph Setup
-# clone madgraph setup
+'clone madgraph setup'
 git clone https://github.com/muhammadgul/schools.git madgraph
 
-### for backupgit clone https://github.com/IPNL-CMS/HTTMadgraphDocumentation.git madgraph
+'for backup'
+
+git clone https://github.com/IPNL-CMS/HTTMadgraphDocumentation.git madgraph
 cd madgraph
 
 # install the latest PDF
