@@ -1,5 +1,5 @@
-##generator
-#MadGraph Setup
+`Generator`
+`MadGraph Setup`
 
 `clone madgraph setup`
 
