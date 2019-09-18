@@ -57,11 +57,11 @@ for backup
 
 # Install pythia-pgs and Delphes
 
-`run ./bin/mg5_amc`
+`./bin/mg5_amc`
 
-`run install pythia-pgs`
+`install pythia-pgs`
 
-`run install Delphes`
+`install Delphes`
 
 ########################################################################################################
 # Running An example of TWZ process: 
