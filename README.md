@@ -64,7 +64,7 @@ for backup
 `run install Delphes`
 
 ########################################################################################################
-# Running An example of W-boson mass: 
+# Running An example of TWZ process: 
 
 https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
