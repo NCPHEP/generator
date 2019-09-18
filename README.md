@@ -100,7 +100,7 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 #Preparing MadWeight Run:
 
-`run ./bin/mg5_aMC`
+`./bin/mg5_aMC`
 
 `import model sm`
 
