@@ -92,9 +92,11 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 #change .root file to lhco manually
 
-`./root2lhco  template_twz_madevents/Events/run_01/tag_1_delphes_events.root  template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco`
+`cd Delphes`
 
-#If you can't see root2lhco command, then made a symbolic link to it.
+`./root2lhco  ../template_twz_madevents/Events/run_01/tag_1_delphes_events.root  ../template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco`
+
+#(Optional) If you can't see root2lhco command, then made a symbolic link to it.
 
 `ln -s /ehep/ehep_data/mgul/test/madgraph/MG5_aMC_v2_6_0/Delphes/root2lhco`
 
