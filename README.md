@@ -76,7 +76,7 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define top = t t~`
 
-`generate p p > top w z, (top > w b, w > e+ ve), w > mu+ vm, z > e+ e-`
+`generate g b > t w- Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
 
 `output template_twz_madevents`
 
@@ -110,7 +110,7 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define top = t t~`
 
-`generate p p > top w z, (top > w b, w > e+ ve), w > mu+ vm, z > e+ e-`
+`generate g b > t w- Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
 
 `output madweight template_twz_madweight`
 
