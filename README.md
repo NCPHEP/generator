@@ -1,6 +1,7 @@
 # generator
 #MadGraph Setup
 `clone madgraph setup`
+
 git clone https://github.com/muhammadgul/schools.git madgraph
 
 'for backup'
