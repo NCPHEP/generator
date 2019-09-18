@@ -63,58 +63,89 @@ for backup
 `run install Delphes`
 
 ########################################################################################################
-# Running An example of W-boson mass: https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
+# Running An example of W-boson mass: 
 
-import model sm
-define p  = g u c d s u~ c~ d~ s~ b b~
-define w = w- w+
-define top = t t~
-generate p p > top w z
-output template_twz_madevents
-launch
-delphes=ON
->
->
+https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
-Your root events file should be place at: template_twz_madevents/Events/run_01/tag_1_delphes_events.root
-### change .root file to lhco manually
-./root2lhco  template_twz_madevents/Events/run_01/tag_1_delphes_events.root  template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco
-## If you can't see root2lhco command, then made a symbolic link to it.
-ln -s /ehep/ehep_data/mgul/test/madgraph/MG5_aMC_v2_6_0/Delphes/root2lhco
+`import model sm`
 
-####### Preparing MadWeight Run:
-run ./bin/mg5_aMC 
-import model sm
-define p  = g u c d s u~ c~ d~ s~ b b~
-define w = w- w+
-define top = t t~
-generate p p > top w z
-output madweight template_twz_madweight
-exit
-cd template_twz_madweight
+`define p  = g u c d s u~ c~ d~ s~ b b~`
 
-# launch the madweight
-./bin/madweight.py
-## Sometimes it makes problem as in my case, but I solved it. You can see the problem and solution in this bug.
-## https://bugs.launchpad.net/mg5amcnlo/+bug/1844041
+`define w = w- w+`
 
-# you can make changes in cards
-# which transfer function to be used, just type:
-change_tf
-## different TF appears, so you can choose one of them.
+`define top = t t~`
 
-## Further options with input .lhco file can be given as input
-Set
-nb_exp_events 2
-Set
-nb_event_by_node 2
-Set
-MW_int_points 1000
-Set
-MW_parameter 13 165 170 175 180 185
-Set
-precision 0.01
-Set
-inputfile ../template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco
->
+`generate p p > top w z`
+
+`output template_twz_madevents`
+
+`launch`
+
+`delphes=ON`
+
+`>`
+
+`>`
+
+#Your root events file should be place at: template_twz_madevents/Events/run_01/tag_1_delphes_events.root
+
+#change .root file to lhco manually
+
+`./root2lhco  template_twz_madevents/Events/run_01/tag_1_delphes_events.root  template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco`
+
+#If you can't see root2lhco command, then made a symbolic link to it.
+
+`ln -s /ehep/ehep_data/mgul/test/madgraph/MG5_aMC_v2_6_0/Delphes/root2lhco`
+
+#Preparing MadWeight Run:
+
+`run ./bin/mg5_aMC`
+
+`import model sm`
+
+`define p  = g u c d s u~ c~ d~ s~ b b~`
+
+`define w = w- w+`
+
+`define top = t t~`
+
+`generate p p > top w z`
+
+`output madweight template_twz_madweight
+
+`exit`
+
+`cd template_twz_madweight`
+
+#launch the madweight
+
+`./bin/madweight.py`
+
+#Sometimes it makes problem as in my case, but I solved it. You can see the problem and solution in this bug.
+
+#https://bugs.launchpad.net/mg5amcnlo/+bug/1844041
+
+#you can make changes in cards
+
+#which transfer function to be used, just type:
+
+`change_tf`
+
+#different TF appears, so you can choose one of them.
+
+#Further options with input .lhco file can be given as input
+
+`set nb_exp_events 2`
+
+`set nb_event_by_node 2`
+
+`set MW_int_points 1000`
+
+`set MW_parameter 13 165 170 175 180 185`
+
+`set precision 0.01`
+
+`set inputfile ../template_twz_madevents/Events/run_01/tag_1_delphes_events.lhco`
+
+`>`
 
