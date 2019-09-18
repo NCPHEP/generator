@@ -24,31 +24,46 @@ for backup
 
 `./configure --with-boost=/cvmfs/cms.cern.ch/slc7_amd64_gcc530/external/boost/1.63.0/include --prefix=$PWD/..`
 
-make -j8
-make install
-cd ..
+`make -j8`
+
+`make install`
+
+`cd ..`
+
 #in case of lhapdf path problem use this export PATH=$PWD/bin:$PATH
-# or this export LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH
+
+#or this export LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH
+
 #download the proper pdf sets
-./install_PDF_set.sh
+
+`./install_PDF_set.sh`
+
 #copy madgraph recent version
-wget http://madgraph.physics.illinois.edu/Downloads/MG5_aMC_v2.6.0.tar.gz
-tar xf MG5_aMC_v2.6.0.tar.gz
-rm MG5_aMC_v2.6.0.tar.gz
+
+`wget http://madgraph.physics.illinois.edu/Downloads/MG5_aMC_v2.6.0.tar.gz`
+
+`tar xf MG5_aMC_v2.6.0.tar.gz`
+
+`rm MG5_aMC_v2.6.0.tar.gz`
 ###################################################################
 
 #set the pdf path
-path=$PWD/bin/lhapdf-config
-sed "s@# lhapdf = lhapdf-config@$path@" MG5_aMC_v2_6_0/input/mg5_configuration.txt > MG5_aMC_v2_6_0/input/newmg5_configuration.txt
-mv MG5_aMC_v2_6_0/input/newmg5_configuration.txt MG5_aMC_v2_6_0/input/mg5_configuration.txt
 
-`Install pythia-pgs and Delphes`
-run ./bin/mg5_amc 
-run install pythia-pgs
-run install Delphes
+`path=$PWD/bin/lhapdf-config`
+`sed "s@# lhapdf = lhapdf-config@$path@" MG5_aMC_v2_6_0/input/mg5_configuration.txt > MG5_aMC_v2_6_0/input/newmg5_configuration.txt`
+
+`mv MG5_aMC_v2_6_0/input/newmg5_configuration.txt MG5_aMC_v2_6_0/input/mg5_configuration.txt`
+
+# Install pythia-pgs and Delphes
+
+`run ./bin/mg5_amc`
+
+`run install pythia-pgs`
+
+`run install Delphes`
 
 ########################################################################################################
-Running An example of W-boson mass: https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
+# Running An example of W-boson mass: https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 import model sm
 define p  = g u c d s u~ c~ d~ s~ b b~
