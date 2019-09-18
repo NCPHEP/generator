@@ -1,7 +1,8 @@
-`Generator`
-`MadGraph Setup`
+#Generators
 
-`clone madgraph setup`
+#MadGraph Setup
+
+#clone madgraph setup
 
 git clone https://github.com/muhammadgul/schools.git madgraph
 
