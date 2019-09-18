@@ -4,12 +4,13 @@
 
 #clone madgraph setup
 
-git clone https://github.com/muhammadgul/schools.git madgraph
+`git clone https://github.com/muhammadgul/schools.git madgraph`
 
-`#for backup`
+for backup
 
-git clone https://github.com/IPNL-CMS/HTTMadgraphDocumentation.git madgraph
-cd madgraph
+`git clone https://github.com/IPNL-CMS/HTTMadgraphDocumentation.git madgraph`
+
+`cd madgraph`
 
 # install the latest PDF
 curl -O -L https://www.hepforge.org/archive/lhapdf/LHAPDF-6.1.6.tar.gz
