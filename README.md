@@ -62,9 +62,11 @@ for backup
 
 # Install pythia-pgs and Delphes
 
-`./bin/mg5_amc`
+ `cd MG5_aMC_v2_6_0/`
 
-`install pythia-pgs`
+`./bin/mg5_aMC`
+
+`install pythia8`
 
 `install Delphes`
 
@@ -81,7 +83,9 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define top = t t~`
 
-`generate g b > t w- Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
+`define bot = b b~`
+
+`generate g bot > top w Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
 
 `output template_twz_madevents`
 
