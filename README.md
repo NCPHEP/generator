@@ -15,9 +15,13 @@ for backup
 # install the latest PDF
 
 `curl -O -L https://www.hepforge.org/archive/lhapdf/LHAPDF-6.1.6.tar.gz`
+
 `tar xf LHAPDF-6.1.6.tar.gz`
+
 `rm LHAPDF-6.1.6.tar.gz`
+
 `cd LHAPDF-6.1.6`
+
 `./configure --prefix=$PWD/..`
 
 #if you have boost problem, then use
