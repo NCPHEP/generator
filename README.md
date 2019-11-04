@@ -6,7 +6,7 @@
 
 `git clone https://github.com/muhammadgul/schools.git madgraph`
 
-for backup
+If the above links doesn't work then, for backup
 
 `git clone https://github.com/IPNL-CMS/HTTMadgraphDocumentation.git madgraph`
 
