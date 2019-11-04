@@ -85,7 +85,13 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define bot = b b~`
 
-`generate g bot > top w Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
+Optional: For the very simple example:
+
+`generate g b > top w Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
+
+For inclusive (Need to change more, I will do if I have time):
+
+`generate p p > top w Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
 
 `output template_twz_madevents`
 
@@ -121,7 +127,9 @@ https://cp3.irmp.ucl.ac.be/projects/madgraph/wiki/TOPMassMeasurmentExample
 
 `define top = t t~`
 
-`generate g b > t w- Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
+`define bot = b b~`
+
+`generate p p > top w Z, (t > b w+, w+ > e+ ve), (w- > u~ d), (Z > e+ e-)`
 
 `output madweight template_twz_madweight`
 
