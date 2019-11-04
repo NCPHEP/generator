@@ -60,7 +60,7 @@ If the above links doesn't work then, for backup
 
 `mv MG5_aMC_v2_6_0/input/newmg5_configuration.txt MG5_aMC_v2_6_0/input/mg5_configuration.txt`
 
-# Install pythia-pgs and Delphes
+# Install pythia8 and Delphes
 
  `cd MG5_aMC_v2_6_0/`
 
