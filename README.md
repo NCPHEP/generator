@@ -56,7 +56,7 @@ If the above links doesn't work then, for backup
 
 `path=$PWD/bin/lhapdf-config`
 
-`sed "s@# lhapdf = lhapdf-config@$path@" MG5_aMC_v2_6_0/input/mg5_configuration.txt > MG5_aMC_v2_6_0/input/newmg5_configuration.txt`
+ `sed "s@# lhapdf = lhapdf-config@lhapdf = $path@" MG5_aMC_v2_6_0/input/mg5_configuration.txt > MG5_aMC_v2_6_0/input/newmg5_configuration.txt`
 
 `mv MG5_aMC_v2_6_0/input/newmg5_configuration.txt MG5_aMC_v2_6_0/input/mg5_configuration.txt`
 
